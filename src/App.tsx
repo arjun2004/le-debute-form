@@ -21,8 +21,8 @@ function App() {
           <br />
           <input
             type="text"
-            id="fname"
-            name="firstname"
+            id="name"
+            name="name"
             placeholder="Your phone number.."
           />
           <br />
@@ -30,8 +30,8 @@ function App() {
           <br />
           <input
             type="text"
-            id="fname"
-            name="firstname"
+            id="email"
+            name="email"
             placeholder="Your email.."
           />
           <br />
@@ -39,28 +39,34 @@ function App() {
           <br />
           <input
             type="text"
-            id="fname"
-            name="firstname"
+            id="class"
+            name="class"
             placeholder="Your Class.."
           />
           <br />
           <label>Food preference:</label>
           <br />
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Veg/Non-Veg"
-          />
+          <select id="food" name="food">
+            <option value="veg">Veg</option>
+            <option value="non-veg">Non-veg</option>
+          </select>
+          <br />
+          <br />
+          <input type="file" id="file" />
+          <label for="file" className="upl">
+            Upload screenshot of the payment
+          </label>
+          <br />
           <br />
           <label>Transaction ID:</label>
           <br />
           <input
             type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
+            id="tid"
+            name="transactionid"
+            placeholder="Transaction ID"
           />
+          <button className="button">Submit</button>
         </form>
       </div>
     </>

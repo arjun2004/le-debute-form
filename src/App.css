@@ -1,4 +1,5 @@
-input[type="text"] {
+input[type="text"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -7,6 +8,10 @@ input[type="text"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
+input[type="file"] {
+  display: none;
+}
+
 h1 {
   text-align: center;
   size: 2rem;
@@ -16,4 +21,27 @@ h1 {
   margin-right: 15rem;
 }
 body {
+}
+.button {
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.upl {
+  height: 100px;
+  width: 150px;
+  border-radius: 6px;
+  border: 1px dashed #999;
+  padding: 10px 12px;
+}
+.upl:hover {
+  color: #de0611;
+  border: 1px dashed #de0611;
 }
